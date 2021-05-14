@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForRecordHome, force:hasRecordId" access="global">
+    <aura:attribute name="test" type="Test__c"/>
+    <force:recordData aura:id="testService"
+        recordID="{!v.recordID}"
+        targetRecord="{!v.test}"
+        recordUpdated="{!v.doInit}"
+        layoutType="FULL"
+    />
+
+    <lightning:input aura:id="counter" name="counter" label="Counter" />
+
+</aura:component>	
